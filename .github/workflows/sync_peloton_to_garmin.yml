@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image:  philosowaffle/peloton-to-garmin:console-stable
-      options: --user root
+      options: --user root -e TZ=Australia/Melbourne
       env:
         TZ: 'Australia/Melbourne'
     steps:
