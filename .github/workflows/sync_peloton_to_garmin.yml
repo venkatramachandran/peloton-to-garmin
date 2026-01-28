@@ -22,6 +22,8 @@ jobs:
   sync:
     name: 🔄 Sync
     runs-on: ubuntu-latest
+    env:
+      TZ: 'Australia/Melbourne'
     container: 
       image:  philosowaffle/peloton-to-garmin:console-stable
       options: --user root
